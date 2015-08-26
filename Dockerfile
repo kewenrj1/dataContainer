@@ -4,7 +4,7 @@ MAINTAINER Rickie Kewene "kewenrj1@student.op.ac.nz"
 RUN apt-get -yqq update
 RUN apt-get -yqq upgrade
 
-RUN mkdir /var/www/html
+RUN mkdir -p /var/www/html
 TOUCH /var/www/html/index.html
 RUN echo 'Hi, I am in your container' >/var/www/html/index.html
 
