@@ -4,6 +4,6 @@ ENV REFRESHED_AT 2015-08-27
 
 RUN mkdir -p /var/www/html
 
-ADD index.html /var/www/html
+COPY index.html /var/www/html/index.html
 
 VOLUME [ "/var/www/html"]
