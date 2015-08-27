@@ -5,9 +5,7 @@ RUN apt-get -yqq update
 RUN apt-get -yqq upgrade
 
 RUN mkdir -p /var/www/html
-TOUCH /var/www/html/index.html
-RUN echo 'Hi, I am in your container' >/var/www/html/index.html
 
-VOLUME /var/www/html
+ADD index.html /var/www/html
 
-EXPOSE 80
+VOLUME [ "/var/www/html"}
