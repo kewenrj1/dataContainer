@@ -8,4 +8,4 @@ RUN mkdir -p /var/www/html
 
 ADD index.html /var/www/html
 
-VOLUME [ "/var/www/html"}
+VOLUME [ "/var/www/html"]
